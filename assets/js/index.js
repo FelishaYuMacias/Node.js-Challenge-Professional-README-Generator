@@ -3,15 +3,11 @@
 const inquirer = require(`inquirer`)
 const fs = require(`fs`)
 
-//create a command-line application that dynamically generates a professional README.md file from a user's input
-//The application will be invoked by using the following command: node index.js
-//provide a link to a walkthrough video that demonstrates its functionality.
-    //Revisit the Screencastify Tutorial in the prework as a refresher on how to record video from your computer.
-    //You’ll need to submit a link to the video _and_ add it to the README of your project.
+//function that generates markdown file using answers from prompt
+const mdcreate = 
 
-//GIVEN a command-line application that accepts user input
-    //TODO:WHEN I am prompted for information about my application repository
-        //THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
+//create a command-line application that dynamically generates a professional README.md file from a user's input
+    //create prompts for: Title, Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
     //TODO:WHEN I enter my project title
         //THEN this is displayed as the title of the README
     //TODO:WHEN I enter a description, installation instructions, usage information, contribution guidelines, and test instructions
@@ -24,3 +20,15 @@ const fs = require(`fs`)
         //THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
     //TODO:WHEN I click on the links in the Table of Contents
         //THEN I am taken to the corresponding section of the README
+//The application will be invoked by using the following command: node index.js
+
+
+//TODO:WHEN I am prompted for information about my application repository
+    //THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
+//provide a link to a walkthrough video that demonstrates its functionality.
+    //Revisit the Screencastify Tutorial in the prework as a refresher on how to record video from your computer.
+    //You’ll need to submit a link to the video _and_ add it to the README of your project.
+
+//TODO: Update challenges README
+
+//TODO: Doublecheck README copy instructions that nothing is missed
