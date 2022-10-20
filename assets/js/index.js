@@ -4,15 +4,59 @@ const inquirer = require(`inquirer`)
 const fs = require(`fs`)
 
 //function that generates markdown file using answers from prompt
-const mdCreate = ({title, description, installation, usage, license, contribute, tests, github, email, badge}) =>
+const mdCreate = ({title, description, installation, usage, license, contribute, tests, github, email}) =>
 `
-//insert template here
+# ${title}
+
+## Description
+
+${description}
+
+## Table of Contents (Optional)
+
+If your README is long, add a table of contents to make it easy for users to find what they need.
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [How to Contribute](#how-to-contribute)
+- [Tests](#tests)
+- [Questions](#questions)
+- [License](#license)
+
+## Installation
+
+${installation}
+
+## Usage
+
+${usage}
+
+## How to Contribute
+
+${contribute}
+
+## Tests
+
+${tests}
+
+## Questions?
+
+Have questions?\n 
+Contact the author via [Email](mailto:${email})\n
+Or check out their [Github](https://github.com/${github})
+
+
+
+## License
+
+${license}
 
 `
 
 //create a command-line application that dynamically generates a professional README.md file from a user's input
 
-inquirer.createPromptModule([
+const startPrompt = () => {
+    return inquirer.prompt([
     //create prompts for: 
     //badge
     {
@@ -76,7 +120,9 @@ inquirer.createPromptModule([
     fs.writeFile(`./readme/${answers.name}.md`, mdWrite, (err)=>{
         err ? console.log(err) : console.log("Your file was created! Check your directory!")  
     })
-})  
+})  }
+
+startPrompt();
     //TODO:WHEN I enter my project title
     //THEN this is displayed as the title of the README
     //TODO:WHEN I enter a description, installation instructions, usage information, contribution guidelines, and test instructions

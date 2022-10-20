@@ -1,5 +1,3 @@
-${badge}
-
 # ${title}
 
 ## Description
