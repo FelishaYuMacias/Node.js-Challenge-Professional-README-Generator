@@ -4,12 +4,81 @@ const inquirer = require(`inquirer`)
 const fs = require(`fs`)
 
 //function that generates markdown file using answers from prompt
-const mdcreate = 
+const mdCreate = ({title, description, installation, usage, license, contribute, tests, github, email, badge}) =>
+`
+//insert template here
+
+`
 
 //create a command-line application that dynamically generates a professional README.md file from a user's input
-    //create prompts for: Title, Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
+
+inquirer.createPromptModule([
+    //create prompts for: 
+    //badge
+    {
+        //Title, 
+        type: 'input',
+        name: 'title',
+        message: 'What is the title of your project?'
+    },
+    {
+        //Description, 
+        type: 'input',
+        name: 'description',
+        message: 'Describe your project.'
+    },
+    {
+        //Installation, 
+        type: 'input',
+        name: 'installation',
+        message: 'How do you install your application?'
+    },
+    {
+        //Usage, 
+        type: 'input',
+        name: 'usage',
+        message: 'Provide instructions and examples for usage of you application.'
+    },
+    {
+        //License
+        type: 'list',
+        message: 'What license do you want?',
+        name: 'license',
+        choices: ['MIT','Apache 2.0', 'ISC', 'BSD3'],
+    },
+    {
+        //Contributing, 
+        type: 'input',
+        name: 'contribute',
+        message: 'How can others contribute to your project?'
+    },
+    {
+        //Tests 
+        type: 'input',
+        name: 'tests',
+        message: 'What are the instructions to test your application?'
+    },
+    {
+        //Github
+        type: 'input',
+        name: 'github',
+        message: 'What is your Github username?'
+    },
+    {
+        //email
+        type: 'input',
+        name: 'email',
+        message: 'What is your email address?'
+    },
+]).then((answers)=>{
+    // console.log(answers)
+    const mdWrite = mdCreate(answers);
+    fs.writeFile(`./readme/${answers.name}.md`, mdWrite, (err)=>{
+        err ? console.log(err) : console.log("Your file was created! Check your directory!")  
+    })
+})  
     //TODO:WHEN I enter my project title
-        //THEN this is displayed as the title of the README
+    //THEN this is displayed as the title of the README
     //TODO:WHEN I enter a description, installation instructions, usage information, contribution guidelines, and test instructions
         //THEN this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests
     //TODO:WHEN I choose a license for my application from a list of options

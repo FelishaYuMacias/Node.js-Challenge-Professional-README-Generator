@@ -12,8 +12,9 @@ If your README is long, add a table of contents to make it easy for users to fin
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [How to Contribute](#contribute)
+- [How to Contribute](#how-to-contribute)
 - [Tests](#tests)
+- [Questions](#questions)
 - [License](#license)
 
 ## Installation
@@ -31,6 +32,13 @@ ${contribute}
 ## Tests
 
 ${tests}
+
+## Questions?
+
+Have questions?\n 
+Contact the author via [Email](mailto:${email})\n
+Or check out their [Github](https://github.com/${github})
+
 
 
 ## License
