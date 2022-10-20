@@ -4,9 +4,7 @@
 
 ${description}
 
-## Table of Contents (Optional)
-
-If your README is long, add a table of contents to make it easy for users to find what they need.
+## Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
@@ -15,21 +13,24 @@ If your README is long, add a table of contents to make it easy for users to fin
 - [Questions](#questions)
 - [License](#license)
 
+## Badge
+![license](https://img.shields.io/badge/license-${license}-blue)
+
 ## Installation
 
 ${installation}
 
 ## Usage
 
-${usage}
+To use this application, ${usage}
 
 ## How to Contribute
 
-${contribute}
+To contribute to this project, ${contribute}
 
 ## Tests
 
-${tests}
+To test this application, ${tests}
 
 ## Questions?
 
@@ -41,4 +42,4 @@ Or check out their [Github](https://github.com/${github})
 
 ## License
 
-${license}
+${license} - See license file for more information.

@@ -30,15 +30,15 @@ ${installation}
 
 ## Usage
 
-${usage}
+To use this application, ${usage}
 
 ## How to Contribute
 
-${contribute}
+To contribute to this project, ${contribute}
 
 ## Tests
 
-${tests}
+To test this application, ${tests}
 
 ## Questions?
 
@@ -50,7 +50,7 @@ Or check out their [Github](https://github.com/${github})
 
 ## License
 
-${license} - See repo for detailed information.
+${license} - See license file for more information.
 
 `
 
@@ -82,7 +82,7 @@ const startPrompt = () => {
         //Usage, 
         type: 'input',
         name: 'usage',
-        message: 'Provide instructions and examples for usage of you application.'
+        message: 'Fill in the following information, "To use this application, {your input here}.'
     },
     {
         //License
@@ -95,13 +95,13 @@ const startPrompt = () => {
         //Contributing, 
         type: 'input',
         name: 'contribute',
-        message: 'How can others contribute to your project?'
+        message: 'Fill in the following information, "To contribute to this project, {your input here}.'
     },
     {
         //Tests 
         type: 'input',
         name: 'tests',
-        message: 'What are the instructions to test your application?'
+        message: 'Fill in the following information, "To test this application, {your input here}.'
     },
     {
         //Github
@@ -125,9 +125,6 @@ const startPrompt = () => {
 
 startPrompt();
    
-   
-    //TODO:WHEN I choose a license for my application from a list of options
-        //THEN a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under
     
 
 //TODO: provide a link to a walkthrough video that demonstrates its functionality.
