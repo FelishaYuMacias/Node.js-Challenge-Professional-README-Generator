@@ -4,7 +4,7 @@ const inquirer = require(`inquirer`)
 const fs = require(`fs`)
 
 //function that generates markdown file using answers from prompt
-const mdCreate = ({title, description, installation, usage, license, contribute, tests, github, email}) =>
+const mdCreate = ({title, description, badge, installation, usage, license, contribute, tests, github, email}) =>
 `
 # ${title}
 
@@ -12,9 +12,7 @@ const mdCreate = ({title, description, installation, usage, license, contribute,
 
 ${description}
 
-## Table of Contents (Optional)
-
-If your README is long, add a table of contents to make it easy for users to find what they need.
+## Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
@@ -22,6 +20,9 @@ If your README is long, add a table of contents to make it easy for users to fin
 - [Tests](#tests)
 - [Questions](#questions)
 - [License](#license)
+
+## Badge
+![license](https://img.shields.io/badge/license-${license}-blue)
 
 ## Installation
 
@@ -117,7 +118,7 @@ const startPrompt = () => {
 ]).then((answers)=>{
     // console.log(answers)
     const mdWrite = mdCreate(answers);
-    fs.writeFile(`./readme/${answers.name}.md`, mdWrite, (err)=>{
+    fs.writeFile(`./readme/${answers.title}.md`, mdWrite, (err)=>{
         err ? console.log(err) : console.log("Your file was created! Check your directory!")  
     })
 })  }
