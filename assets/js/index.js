@@ -1,3 +1,8 @@
+//create variables for npm
+
+const inquirer = require(`inquirer`)
+const fs = require(`fs`)
+
 //create a command-line application that dynamically generates a professional README.md file from a user's input
 //The application will be invoked by using the following command: node index.js
 //provide a link to a walkthrough video that demonstrates its functionality.
