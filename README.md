@@ -66,6 +66,10 @@ See video below for walkthrough.
 
 https://drive.google.com/file/d/15kAYTe6CI6bnywl_2Sd_kJLS41H4-5b9/view
 
+### Screenshot
+
+![Screenshot of terminal after prompts are answered](./Screenshot.png)
+
 
 ## Credits
 
