@@ -46,15 +46,25 @@ THEN I am taken to the corresponding section of the README
 
 *   Right click on index.js and select "Open in Integrated Terminal"
 
-*   If you do not have the npm packages (a package.json file does not exist) then run the command `npm init -y` to create the package.json and automatically accept defaults. Then run the command `npm i inquirer@` to install the correct version of inquirer.
-
-
+*   If you do not have the npm packages (a package.json file does not exist) then run the following command to create the package.json and automatically accept defaults. 
+```md 
+npm init -y
+``` 
+*   Then run the following command to install the correct version of inquirer.
+ ``` md 
+ npm i inquirer@
+ ``` 
+    
 ## Usage
 
-Once everything is installed run the command `node index.js` and answer prompts to create your README file.
+Once everything is installed run the following command and answer prompts to create your README file.
+```md
+node index.js
+``` 
 
 See video below for walkthrough.
 
+https://drive.google.com/file/d/15kAYTe6CI6bnywl_2Sd_kJLS41H4-5b9/view
 
 
 ## Credits
@@ -65,7 +75,11 @@ https://www.npmjs.com/package/inquirer
 Basic Markdown Syntax
 https://www.markdownguide.org/basic-syntax/#code-blocks
 
+Github Repository Link
+https://github.com/FelishaYuMacias/Node.js-Challenge-Professional-README-Generator
 
+Link to Walkthrough Recording
+https://drive.google.com/file/d/15kAYTe6CI6bnywl_2Sd_kJLS41H4-5b9/view
 
 
 ## License

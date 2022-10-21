@@ -1,9 +1,9 @@
 
-# Professional README Generator
+# README Generator
 
 ## Description
 
-A command-line application that dynamically generates a professional README.md file from a user's input
+A command line application that generates a README.md file from a user's input.
 
 ## Table of Contents
 
@@ -23,11 +23,11 @@ Simply run npm i in the command line terminal.
 
 ## Usage
 
-To use this application, Run node index.js in the terminal and answer prompts.
+To use this application, run node index.js in the terminal and answer the prompts.
 
 ## How to Contribute
 
-To contribute to this project, Reach out to me via the links listed in Questions.
+To contribute to this project, Reach out to me via the links in the Questions secition.
 
 ## Tests
 
@@ -45,5 +45,5 @@ Or check out their [Github](https://github.com/felishayumacias)
 
 ## License
 
-MIT - See License file for more information.
+MIT - See license file for more information.
 
