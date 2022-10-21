@@ -118,7 +118,7 @@ const startPrompt = () => {
 ]).then((answers)=>{
     // console.log(answers)
     const mdWrite = mdCreate(answers);
-    fs.writeFile(`./readme/${answers.title}.md`, mdWrite, (err)=>{
+    fs.writeFile(`./sample-readmes/README.md`, mdWrite, (err)=>{
         err ? console.log(err) : console.log("Your file was created! Check your directory!")  
     })
 })  }
